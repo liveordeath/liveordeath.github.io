@@ -6,7 +6,7 @@
 @import "bases/bases";
 @import "modules/modules";
 @import "layouts/layouts";
-
+@import "components/components";
 /*
     Theme Name: Delicious
     Theme URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -22,6 +22,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
 }
 ol, ul {
   list-style: none;
@@ -447,6 +453,7 @@ table {
   text-transform: uppercase;
   margin: 0 5px;
 }
+
 @media (min-width: 768px) and (max-width: 980px) {
   .content-holder h2 {
     font-size: 23px;
