@@ -22,11 +22,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+  cursor: url('../images/fork.png'), auto;
 }
+
 a{
   text-decoration: none;
+
   &:hover{
     text-decoration: none;
+    cursor: url('../images/knife.png'), auto;
+
   }
 }
 ol, ul {
