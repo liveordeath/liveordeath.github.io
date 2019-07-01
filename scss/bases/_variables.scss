@@ -1,0 +1,83 @@
+// Font Colors
+$base-font-family:'Open Sans';
+$base-font-weight:normal;
+$base-line-height:1.5;
+
+//Background Colors
+$white-1:#ffffff;
+//...
+
+$black-1:#000000;
+$black-2:#222222;
+$black-3:#444444;
+//...
+
+$yellow-1:#fcb813;
+$yellow-2:#fffcee;
+$yellow-3:#d99903;
+$yellow-4:#fffcf4;
+//...
+
+$blue-1:#3c5a98;
+//...
+
+$red-1:#e6442e;
+//...
+
+$green-1:#91bb15;
+$green-2:#f3ffe0;
+$green-3:#add075;
+$green-4:#577209;
+$green-5:#5a8a0d;
+//...
+
+$gray-1:#f1f1f1;
+$gray-2:#f5f5f5;
+$gray-3:#cccccc;
+$gray-4:#f0f0f0;
+$gray-5:#999999;
+$gray-6:#dddddd;
+$gray-7:#f8f8f8;
+$gray-8:#d8d8d8;
+$gray-9:#ededed;
+$gray-10:#666666;
+//...
+
+//Font Size
+$size-10:10px;
+$size-12:12px;
+$size-14:14px;
+$size-16:16px;
+$size-18:18px;
+$size-20:20px;
+$size-22:22px;
+$size-24:24px;
+$size-50:50px;
+$size-100:100px;
+
+//Font weight
+$light:300;
+$regular:400;
+$semibold:500;
+$bold:600;
+$tblack:700;
+$black:900;
+
+//Responsive
+$screen-xs:767px;
+$screen-sm:768px;
+$screen-md:992px;
+$screen-lg:1200px;
+
+//grid
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+
+
+
+
+
+
