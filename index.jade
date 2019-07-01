@@ -4,12 +4,232 @@ html(lang="vi")
         include jades/head.jade
         link(rel="stylesheet" href="css/index.css")
     body
+        // about
+        section#about.section-padding
+            .container
+                .row
+                    .col-md-12.text-center.marb-35
+                        h1.header-h Delicious Journey
+                        p.header-p
+                            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            br
+                            | nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                    .col-md-1
+                    .col-md-10
+                        .col-md-6.col-sm-6
+                            .about-info
+                                h2.heading vel illum qui dolorem eum
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates quibusdam dicta!
+                                .details-list
+                                    ul
+                                        li
+                                            i.fa.fa-check
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        li
+                                            i.fa.fa-check
+                                            | Quisque finibus eu lorem quis elementum
+                                        li
+                                            i.fa.fa-check
+                                            | Vivamus accumsan porttitor justo sed
+                                        li
+                                            i.fa.fa-check
+                                            | Curabitur at massa id tortor fermentum luctus
+                        .col-md-6.col-sm-6
+                            img.img-responsive(src='img/res01.jpg', alt='')
+                    .col-md-1
+        // /about
+        // event
+        section#event
+            .bg-color
+                .container
+                    .row
+                        .col-xs-12.text-center(style='padding:60px;')
+                            h1.header-h Up Coming events
+                            p.header-p Decorations 100% complete here
+                        .col-md-12(style='padding-bottom:60px;')
+                            .item.active.left
+                                .col-md-6.col-sm-6.left-images
+                                    img.img-responsive(src='img/res02.jpg')
+                                .col-md-6.col-sm-6.details-text
+                                    .content-holder
+                                        h2 Joyful party
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.
+                                        address
+                                            strong Place:
+                                            |                               1612 Collins Str, Victoria 8007
+                                            br
+                                            strong Time:
+                                            |                               07:30pm
+                                        a.btn.btn-imfo.btn-read-more(href='events-details.html') Read more
+        // / event
+        // menu
+        section#menu-list.section-padding
+            .container
+                .row
+                    .col-md-12.text-center.marb-35
+                        h1.header-h Menu List
+                        p.header-p
+                            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            br
+                            | nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                    #menu-flters.col-md-12.text-center
+                        ul
+                            li
+                                a.filter.active(data-filter='.menu-restaurant') Show All
+                            li
+                                a.filter(data-filter='.breakfast') Breakfast
+                            li
+                                a.filter(data-filter='.lunch') Lunch
+                            li
+                                a.filter(data-filter='.dinner') Dinner
+                    #menu-wrapper
+                        .breakfast.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .breakfast.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .breakfast.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .breakfast.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .lunch.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .lunch.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .lunch.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .lunch.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .lunch.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .dinner.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .dinner.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+                        .dinner.menu-restaurant
+                            span.clearfix
+                                a.menu-title(href='#', data-meal-img='assets/img/restaurant/rib.jpg') Food Item Name
+                                span.menu-line(style='left: 166px; right: 44px;')
+                                span.menu-price $20.99
+                            span.menu-subtitle Neque porro quisquam est qui dolorem
+        // / menu
+        // contact
+        section#contact.section-padding
+            .container
+                .row
+                    .col-md-12.text-center
+                        h1.header-h Book Your table
+                        p.header-p
+                            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            br
+                            | nibh euismod tincidunt ut laoreet dolore magna aliquam.
+                .row.msg-row
+                    .col-md-4.col-sm-4.mr-15
+                        .media-2
+                            .media-left
+                                .contact-phone.bg-1.text-center
+                                    span.phone-in-talk.fa.fa-phone
+                            .media-body
+                                h4.dark-blue.regular Phone Numbers
+                                p.light-blue.regular.alt-p
+                                    | +440 875369208 -
+                                    span.contacts-sp Phone Booking
+                        .media-2
+                            .media-left
+                                .contact-email.bg-14.text-center
+                                    span.hour-icon.fa.fa-clock-o
+                            .media-body
+                                h4.dark-blue.regular Opening Hours
+                                p.light-blue.regular.alt-p  Monday to Friday 09.00 - 24:00
+                                p.light-blue.regular.alt-p
+                                    | Friday and Sunday 08:00 - 03.00
+                    .col-md-8.col-sm-8
+                        form.contactForm(action='', method='post', role='form')
+                            #sendmessage Your booking request has been sent. Thank you!
+                            #errormessage
+                            .col-md-6.col-sm-6.contact-form.pad-form
+                                .form-group.label-floating.is-empty
+                                    input#name.form-control(type='text', name='name', placeholder='Your Name', data-rule='minlen:4', data-msg='Please enter at least 4 chars')
+                                    .validation
+                            .col-md-6.col-sm-6.contact-form
+                                .form-group
+                                    input#date.form-control.label-floating.is-empty(type='date', name='date', placeholder='Date', data-rule='required', data-msg='This field is required')
+                                    .validation
+                            .col-md-6.col-sm-6.contact-form.pad-form
+                                .form-group
+                                    input#email.form-control.label-floating.is-empty(type='email', name='email', placeholder='Your Email', data-rule='email', data-msg='Please enter a valid email')
+                                    .validation
+                            .col-md-6.col-sm-6.contact-form
+                                .form-group
+                                    input#time.form-control.label-floating.is-empty(type='time', name='time', placeholder='Time', data-rule='required', data-msg='This field is required')
+                                    .validation
+                            .col-md-6.col-sm-6.contact-form
+                                .form-group
+                                    input#phone.form-control.label-floating.is-empty(type='text', name='phone', placeholder='Phone', data-rule='required', data-msg='This field is required')
+                                    .validation
+                            .col-md-6.col-sm-6.contact-form
+                                .form-group
+                                    input#people.form-control.label-floating.is-empty(type='text', name='people', placeholder='People', data-rule='required', data-msg='This field is required')
+                                    .validation
+                            .col-md-12.contact-form
+                                .form-group.label-floating.is-empty
+                                    textarea.form-control(name='message', rows='5', data-rule='required', data-msg='Please write something for us', placeholder='Message')
+                                    .validation
+                            .col-md-12.btnpad
+                                .contacts-btn-pad
+                                    button.contacts-btn Book Table
+        // / contact
 
         include jades/footer.jade
-        script(type='text/javascript' src="js/libs/jquery-3.2.1.slim.min.js")
-        script(type='text/javascript' src="js/libs/bootstrap-4.0.0.min.js")
-        script(type="text/javascript" src="js/libs/slick.js")
-        script(type="text/javascript" src="main.js")
+        script(type='text/javascript' src="js/libs/bootstrap.min.js")
+        script(type='text/javascript' src="js/libs/jquery.min.js")
+        script(type='text/javascript' src="js/libs/jquery.easing.min.js")
+        script(type="text/javascript" src="js/libs/custom.js")
 
 
 
