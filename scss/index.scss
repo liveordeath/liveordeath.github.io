@@ -42,6 +42,7 @@ table {
   background: url(../images/banner-bg.jpg) no-repeat center top;
   background-size: cover;
   min-height: 630px;
+  background-attachment: fixed;
 }
 .bg-color{
   background-color: RGBA(0, 0, 0, 0.61);
@@ -283,6 +284,7 @@ table {
 #event{
   background: url('../images/res02.jpg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .left-images img {
   height: 308px;
