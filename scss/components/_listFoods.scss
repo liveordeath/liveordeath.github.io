@@ -32,14 +32,15 @@
       }
       &__image{
         width: 300px;
-        height: auto;
+        height: 90px;
         display: block;
         margin: 0 0 1em;
         box-shadow: none;
         max-width: 100%;
         img{
           width: 100%;
-          height: auto;
+          height: 100%;
+          object-fit: cover;
 
         }
     }
@@ -158,4 +159,50 @@
 .columns-4{
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .products{
+      &__items{
+        width: calc(50% - 10px);
+        height: 220px;
+        margin: 5px 5px 25px 5px;
+        &__contents{
+          .onsale{
+            left:-15px;
+          }
+          &__image{
+            img{
+            }
+          }
+          &__title{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .star-rating{
+
+          }
+          .price{
+
+            del{
+
+            }
+            ins{
+
+            }
+          }
+        }
+        &__button{
+
+          &:before{
+
+          }
+          &:after{
+
+          }
+
+        }
+      }
+    }
 }
