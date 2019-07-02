@@ -135,3 +135,106 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .fly-content{
+    width: 100%;
+    .product{
+      display: block;
+      .onsale{
+        left:-15px;
+      }
+      &__gallery{
+        width: 100%;
+        &__Img{
+          a{
+            img{
+              min-height:unset;
+            }
+          }
+        }
+      }
+      .summary{
+        width: 100%;
+        &__title{
+          clear: none;
+          margin-top: 0;
+          margin-bottom: 17.6px;
+          padding: 0;
+        }
+        &__rating{
+          margin-bottom: 1.618em;
+          line-height: 2;
+          display: flex;
+          align-items: center;
+          .star-rating{
+            margin-right: 10px;
+          }
+          a{
+            font-size: 13px;
+            color: #f50;
+          }
+        }
+        .price{
+          font-size: 24px;
+          ins{
+            font-weight: 700;
+          }
+
+        }
+        &__detail{
+          p{
+            font-size: 16px;
+            line-height: 1.9;
+            word-wrap: break-word;
+            margin-bottom: 1.2em;
+            font-weight: bold;
+            color: black;
+          }
+        }
+        .cart{
+          display: flex;
+          .quantity{
+            margin: 0 4px 0 0;
+            input{
+              width: 3.6em;
+              text-align: center;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              display: block;
+              width: 50px;
+              height: 36px;
+              padding: 0;
+              margin-bottom: 20px;
+              font-size: 12px;
+              font-weight: 400;
+              color: #444;
+              line-height: normal;
+              letter-spacing: 0;
+              background-color: transparent;
+              border: 1px solid #e5e5e5;
+              border-radius: 0;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              -webkit-transition: all 0.2s ease-out;
+              -moz-transition: all 0.2s ease-out;
+              -o-transition: all 0.2s ease-out;
+              -ms-transition: all 0.2s ease-out;
+              transition: all 0.2s ease-out;
+            }
+          }
+        }
+        .product_meta{
+          color:black;
+          font-size: 13px;
+          .posted_in{
+
+          }
+        }
+      }
+    }
+  }
+
+}

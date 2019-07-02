@@ -489,11 +489,15 @@ table {
   .details-text p {
     line-height: 16.6px;
   }
+
 }
 @media (min-width: 451px) and (max-width: 767px) {
   .details-text {
     border:0px;
     border-bottom: 2px solid #A87F41;
+  }
+  .contacts-btn-pad{
+    text-align: center;
   }
 }
 @media (min-width: 20px) and (max-width: 450px) {
@@ -521,4 +525,7 @@ table {
   }
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  .contacts-btn-pad{
+    text-align: center;
+  }
 }
