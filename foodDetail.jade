@@ -1,0 +1,90 @@
+doctype html
+html(lang="vi")
+    head
+        include jades/head.jade
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap&subset=latin-ext,vietnamese', rel='stylesheet')
+        link(rel="stylesheet" href="css/index.css")
+    body
+        audio(src='mp3/test.mp3', autoplay='')
+        include jades/header
+        .page-wrapper.page-sidebar
+            .container
+                .row
+                    // contents
+                    .fly-content
+                        .product
+                            span.onsale Sale!
+                            .product__gallery
+                                .product__gallery__bigImg
+                                    a(href="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/31.jpg")
+                                        img(src="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/31.jpg")
+                                .product__gallery__Img
+                                    a(href="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/04/stake.jpg")
+                                        img(src="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/04/stake.jpg")
+                                .product__gallery__Img
+                                    a(href="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide2-150x150.jpg")
+                                        img(src="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide2-150x150.jpg")
+                                .product__gallery__Img
+                                    a(href="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide1-150x150.jpg")
+                                        img(src="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide1-150x150.jpg")
+                                .product__gallery__Img
+                                    a(href="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide6-150x150.jpg")
+                                        img(src="https://demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide6-150x150.jpg")
+
+
+
+
+
+                            .summary
+                                h1.summary__title
+                                    |Pizza Pepperoni
+                                .summary__rating
+                                    .star-rating
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                    a.woocommerce-review-link(href='#reviews', rel='nofollow')
+                                        | (
+                                        span.count 2
+                                        |  customer reviews)
+
+
+                                .price
+                                    del
+                                        span.woocommerce-Price-amount.amount
+                                            span.woocommerce-Price-currencySymbol $
+                                            | 3.00
+                                    ins
+                                        span.woocommerce-Price-amount.amount
+                                            span.woocommerce-Price-currencySymbol $
+                                            | 2.00
+                                .summary__detail
+                                    p
+                                        | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+                                form.cart(action='https://demo.flytemplates.com/flyfood/shop/pizza/', method='post', enctype='multipart/form-data')
+                                    .quantity
+                                        input#quantity_5cf20aefb932e.input-text.qty.text(type='number', step='1', min='1', max='', name='quantity', value='1', title='Qty', size='4', pattern='[0-9]*', inputmode='numeric', aria-labelledby='')
+                                    button.buttonAddToCart(type='submit', name='add-to-cart', value='627') Add to cart
+                                .product_meta
+                                    span.posted_in
+                                        | Categories:
+                                        a(href='https://demo.flytemplates.com/flyfood/product-category/food/deserts/', rel='tag') Deserts
+                                        | ,
+                                        a(href='https://demo.flytemplates.com/flyfood/product-category/food/', rel='tag') Food
+                                        | ,
+                                        a(href='https://demo.flytemplates.com/flyfood/product-category/food/salads/', rel='tag') Salads
+                                    span.tagged_as
+                                        | Tags:
+                                        a(href='https://demo.flytemplates.com/flyfood/product-tag/desert/', rel='tag') desert
+                                        | ,
+                                        a(href='https://demo.flytemplates.com/flyfood/product-tag/food/', rel='tag') food
+                                        | ,
+                                        a(href='https://demo.flytemplates.com/flyfood/product-tag/juice/', rel='tag') juice
+
+        include jades/footer.jade
+        script(type='text/javascript' src="js/libs/jquery.min.js")
+        script(type='text/javascript' src="js/libs/jquery.easing.min.js")
+        script(type='text/javascript' src="js/libs/bootstrap.min.js")
+        script(type="text/javascript" src="js/libs/custom.js")

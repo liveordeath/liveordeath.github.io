@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+@import "page/foodDetail";
 @import "libs/libs";
 @import "bases/bases";
 @import "modules/modules";
@@ -32,6 +33,9 @@ a{
     text-decoration: none;
     cursor: url('../images/knife.png'), auto;
 
+  }
+  &:focus{
+    text-decoration: none;
   }
 }
 ol, ul {
