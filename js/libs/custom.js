@@ -157,6 +157,11 @@ jQuery(document).ready(function($) {
     });
     return false;
   });
-
 });
 
+$(document).ready(function() {
+  $('.demo').ripples({
+    dropRadius: 10,
+    perturbance: 0.01,
+  })
+});

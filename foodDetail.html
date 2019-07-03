@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <title>Món ngon mỗi ngày</title>
+    <title>Hốc đã tính sau (:</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -13,11 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;display=swap&amp;subset=latin-ext,vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <!--script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')-->
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
   </head>
   <body>
     <audio src="mp3/test.mp3" autoplay=""></audio>
     <!-- banner-->
-    <section id="banner">
+    <section id="banner" class="demo">
       <div class="bg-color">
         <header id="header">
           <div class="container">
@@ -71,6 +73,46 @@
               </div>
             </div>
           </div>
+          <div class="sidebar">
+            <div class="sidebar__content widget">
+              <h4 class="widget__title"><span>Product Search</span></h4>
+              <form role="search" method="get" action="https://demo.flytemplates.com/flyfood/" class="product-search">
+                <label for="woocommerce-product-search-field-0" class="screen-reader-text">Search for:</label>
+                <input id="woocommerce-product-search-field-0" type="search" placeholder="Search products…" value="" name="s" class="search-field">
+                <button type="submit" value="Search">Search</button>
+                <input type="hidden" name="post_type" value="product">
+              </form>
+            </div>
+            <div class="widget-sidebar widget">
+              <h4 class="widget__title"><span>Products</span></h4>
+              <ul class="product_list_widget">
+                <li><a href="https://demo.flytemplates.com/flyfood/shop/pizza/"><span class="product-title">Pizza Pepperoni</span><img width="300" height="154" src="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/31.jpg" alt="" srcset="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/31.jpg 700w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/31-300x154.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" class="wp-post-image"></a>
+                  <div class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="price">
+                    <del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>3.00</span></del><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>2.00</span></ins>
+                  </div>
+                </li>
+                <li><a href="https://demo.flytemplates.com/flyfood/shop/sushi/"><span class="product-title">Special Sushi</span><img width="300" height="145" src="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/gallery-1.jpg" alt="" srcset="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/gallery-1.jpg 1920w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/gallery-1-300x145.jpg 300w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/gallery-1-768x372.jpg 768w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/gallery-1-1024x496.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image"></a>
+                  <div class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>2.00</span></ins></div>
+                </li>
+                <li><a href="https://demo.flytemplates.com/flyfood/shop/crevettes/"><span class="product-title">Crevettes Salad</span><img width="300" height="145" src="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide2.jpg" alt="" srcset="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide2.jpg 1920w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide2-300x145.jpg 300w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide2-768x372.jpg 768w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/09/slide2-1024x496.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image"></a>
+                  <div class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  <div class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>9.00</span></ins></div>
+                </li>
+                <li><a href="https://demo.flytemplates.com/flyfood/shop/fruit-cake/"><span class="product-title">Fruit Cake</span><img width="300" height="145" src="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/04/fruit-cake.jpg" alt="" srcset="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/04/fruit-cake.jpg 1920w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/04/fruit-cake-300x145.jpg 300w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/04/fruit-cake-768x372.jpg 768w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/04/fruit-cake-1024x496.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image"></a>
+                  <div class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-stari"></i>
+                    <div class="fa fa-star"></div>
+                  </div>
+                  <div class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>39.00</span></ins></div>
+                </li>
+                <li><a href="https://demo.flytemplates.com/flyfood/shop/strawberry/"><span class="product-title">Strawberry in the Chocolate</span><img width="300" height="154" src="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/41.jpg" alt="" srcset="//demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/41.jpg 700w, //demo.flytemplates.com/flyfood/wp-content/uploads/2017/03/41-300x154.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image"></a>
+                  <div class="star-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+                  <div class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>13.00</span></ins></div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -92,9 +134,9 @@
       </div>
     </footer>
     <!-- / footer-->
-    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
     <script type="text/javascript" src="js/libs/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.ripples-min.js"></script>
     <script type="text/javascript" src="js/libs/custom.js"></script>
   </body>
 </html>
