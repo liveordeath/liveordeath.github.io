@@ -6,8 +6,8 @@ html(lang="vi")
         link(href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap&subset=latin-ext,vietnamese', rel='stylesheet')
         link(rel="stylesheet" href="css/index.css")
         script(type='text/javascript' src="js/libs/jquery.min.js")
-    body
-        audio(src='mp3/test.mp3', autoplay='')
+    body(oncontextmenu="return false")
+        audio(src='mp3/test.mp3', autoplay='', loop='')
         include jades/header
         // about
         section#about.section-padding
