@@ -1,3 +1,4 @@
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -7,6 +8,15 @@ function closeNav() {
 }
 
 
+function myFunction() {
+  a = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("page-wrapper").style.display = "block";
+  document.querySelector('body').styleposition= "relative";
+}
 
 (function($) {
 
@@ -157,6 +167,12 @@ jQuery(document).ready(function($) {
     });
     return false;
   });
+
+
+
+
+
+
 });
 
 $(document).ready(function() {
