@@ -14,11 +14,14 @@ body{
 .box{
   position: relative;
   background: none;
-  width: 600px;
+  width: auto;
   height: 400px;
   display: block;
   margin: auto;
   margin-top: 5%;
+  @media (min-width:767px) {
+     width: 600px;
+  }
   .content{
     position: absolute;
     width: 40%;
@@ -188,3 +191,4 @@ body{
   }
 
 }
+
