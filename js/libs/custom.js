@@ -8,7 +8,6 @@ function showPage() {
   document.getElementById("loading").style.display = "none";
   document.getElementById("page-wrapper").style.display = "block";
   document.querySelector('body').style.position= "relative";
-  document.querySelector('body').style.overflow="unset";
 }
 
 (function($) {
