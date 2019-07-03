@@ -1,12 +1,4 @@
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
 
 function myFunction() {
   a = setTimeout(showPage, 1000);
@@ -15,7 +7,8 @@ function myFunction() {
 function showPage() {
   document.getElementById("loading").style.display = "none";
   document.getElementById("page-wrapper").style.display = "block";
-  document.querySelector('body').styleposition= "relative";
+  document.querySelector('body').style.position= "relative";
+  document.querySelector('body').style.overflow="unset";
 }
 
 (function($) {
@@ -167,7 +160,9 @@ jQuery(document).ready(function($) {
     });
     return false;
   });
-
+  document.querySelector('.form-search-open').onclick = function () {
+    document.querySelector('.form-search-header').classList.toggle('active')
+  }
 
 
 

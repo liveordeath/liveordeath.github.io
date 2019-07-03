@@ -16,6 +16,7 @@
 */
 
 body {
+  overflow: hidden;
   font-size: 15px;
   line-height: 1.52;
   color: #717f86;
@@ -63,7 +64,6 @@ table {
   background: url(../images/banner-bg.jpg) no-repeat center top;
   background-size: cover;
   min-height: 630px;
-  background-attachment: fixed;
   overflow: hidden;
 }
 .bg-color{

@@ -1,16 +1,50 @@
 // banner
 section#banner.demo
+    .top-menu
+        .container-fluid
+            .row
+                .col-sm-8.col-xs-2
+                    .social
+                        a.social-toggle(href='#')
+                            i.fa.fa-share-alt
+                        ul
+                            li
+                                a(target='_blank', href='https://twitter.com/TienTra82584460')
+                                    i.fa.fa-tumblr-square
+                                    | Twitter
+                            li
+                                a(target='_blank', href='https://www.facebook.com/jokeritme')
+                                    i.fa.fa-facebook-square
+                                    | Facebook
+                            li
+                                a(target='_blank', href='https://www.instagram.com/flytemplates/')
+                                    i.fa.fa-instagram
+                                    | Instagram
+                            li
+                                a(target='_blank', href='https://www.pinterest.com/flytemplates/')
+                                    i.fa.fa-pinterest-square
+                                    | Pinterest
+                .col-sm-4.col-xs-10.text-right
+                    ul
+                        li
+                            a(href='https://demo.flytemplates.com/flyfood/feed/')
+                                i.fa.fa-rss
+                                | RSS
+                        li
+                            a.form-search-open(href='#')
+                                i.fa.fa-search
+                                | Search
+                            // Search Form
+                            form.form-search-header(action='https://demo.flytemplates.com/flyfood/', method='get')
+                                .inner
+                                    .row
+                                        .col-xs-8
+                                            input.form-control(type='search', name='s', placeholder='Type Keywords')
+                                        .col-xs-4
+                                            input.btn.btn-wide(type='submit', value='search')
+                            // / Search Form
     .bg-color
         header#header
-            .container
-                #mySidenav.sidenav
-                    a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
-                    a(href='#about') News
-                    a(href='#event') Event
-                    a(href='#menu-list') Menu
-                    a(href='#contact') Book a table
-                // Use any element to open the sidenav
-                span.pull-right.menu-icon(onclick='openNav()') ☰
         .container
             .row
                 .inner.text-center
@@ -18,3 +52,4 @@ section#banner.demo
                     h2.bubbles Mầm đá mà vua từng ăn đếch bao giờ bằng thịt thăn quán bố mày nấu!
                     p Tưởng bình thường hóa ra lại rất đơn giản!!
 // / banner
+
