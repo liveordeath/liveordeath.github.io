@@ -55,7 +55,7 @@ footer{
     }
   }
   .footer-two{
-    background: url("../../images/8.png");
+    background: url("../../images/footer.jpg");
     background-size: cover;
     .bg-black{
       width: 100%;
@@ -141,6 +141,7 @@ footer{
           ul{
             margin-top: 10px;
             li{
+              display: table;
               a{
                 display: block;
                 color: rgb(204, 204, 204);

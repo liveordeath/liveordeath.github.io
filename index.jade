@@ -209,70 +209,35 @@ html(lang="vi")
                     include jades/components/listFoods
                     // / lisst food
                     // contact
-                    section#contact.section-padding
-                        .container
-                            .row
-                                .col-md-12.text-center
-                                    h1.header-h Đặt hàng ngay
-                                    p.header-p
-                                        | Ăn một lần - nhớ mãi mãi
-                                        br
-                                        | Ăn theo cách của bạn, tình tiền theo cách của chúng tôi.
-                            .row.msg-row
-                                .col-md-4.col-sm-4.mr-15
-                                    .media-2
-                                        .media-left
-                                            .contact-phone.bg-1.text-center
-                                                span.phone-in-talk.fa.fa-phone
-                                        .media-body
-                                            h4.dark-blue.regular Số điện thoại
-                                            p.light-blue.regular.alt-p
-                                                | 0984768803 -
-                                                span.contacts-sp gọi điện đặt hàng
-                                    .media-2
-                                        .media-left
-                                            .contact-email.bg-14.text-center
-                                                span.hour-icon.fa.fa-clock-o
-                                        .media-body
-                                            h4.dark-blue.regular Giờ mở cửa
-                                            p.light-blue.regular.alt-p  Thứ 2 đến thứ 6 09.00 - 24:00
-                                            p.light-blue.regular.alt-p
-                                                | Thứ 7 và chủ nhật 08:00 - 03.00
-                                .col-md-8.col-sm-8
-                                    form.contactForm(action='', method='post', role='form')
-                                        #sendmessage Your booking request has been sent. Thank you!
-                                        #errormessage
-                                        .col-md-6.col-sm-6.contact-form.pad-form
-                                            .form-group.label-floating.is-empty
-                                                input#name.form-control(type='text', name='name', placeholder='Tên của bạn', data-rule='minlen:4', data-msg='Vui lòng nhập tên bạn')
-                                                .validation
-                                        .col-md-6.col-sm-6.contact-form
-                                            .form-group
-                                                input#date.form-control.label-floating.is-empty(type='date', name='date', placeholder='Ngày', data-rule='required', data-msg='chọn thời gian')
-                                                .validation
-                                        .col-md-6.col-sm-6.contact-form.pad-form
-                                            .form-group
-                                                input#email.form-control.label-floating.is-empty(type='email', name='email', placeholder='Email', data-rule='email', data-msg='Vui lòng nhập email của bạn')
-                                                .validation
-                                        .col-md-6.col-sm-6.contact-form
-                                            .form-group
-                                                input#time.form-control.label-floating.is-empty(type='time', name='time', placeholder='Time', data-rule='required', data-msg='chọn thời gian')
-                                                .validation
-                                        .col-md-6.col-sm-6.contact-form
-                                            .form-group
-                                                input#phone.form-control.label-floating.is-empty(type='text', name='phone', placeholder='Số điện thoại', data-rule='required', data-msg='Nhập số điện thoại')
-                                                .validation
-                                        .col-md-6.col-sm-6.contact-form
-                                            .form-group
-                                                input#people.form-control.label-floating.is-empty(type='text', name='people', placeholder='Số lượng', data-rule='required', data-msg='Vui lòng nhập số lượng')
-                                                .validation
-                                        .col-md-12.contact-form
-                                            .form-group.label-floating.is-empty
-                                                textarea.form-control(name='message', rows='5', data-rule='required', data-msg='Vui lòng nhập yêu cầu của bạn', placeholder='Yêu cầu')
-                                                .validation
-                                        .col-md-12.btnpad
-                                            .contacts-btn-pad
-                                                button.contacts-btn Đặt bàn
+                    section.order
+                        .order__content
+                            .container
+                                .row
+                                    .col-sm-6.col-xs-12
+                                        .order__content__text
+                                            h1.header-h Make Your Order
+                                            h6  BOOK ONLINE
+                                            img(src='images/knife.png')
+                                            p
+                                                | The one day when the lady met this fellow and they knew it was much more than a hunch the first mate and his Skipper too will do their comfortable knew it was much more than a hunch the first mate.
+                                            .hotline
+                                                p hotline
+                                                a(href='index.html')
+                                                    i.fa.fa-phone
+                                                    | (04) 36.666.888
+                                            p.bold  * FREE DELIVERY WITHIN 10KM DISTANCE
+                                    .col-sm-6.col-xs-12
+                                        .order-form
+                                            h2  FILL THE ORDER
+                                            .bg-yellow
+                                            .bg-black1
+                                            .form-order
+                                                input.your-name(type='text', placeholder='YOUR NAME*')
+                                                input.your-mail(type='text', placeholder='YOUR MAIL*')
+                                                input.your-phone(type='text', placeholder='YOUR PHONE NUMBER*')
+                                                input.your-adddress(type='text', placeholder='YOUR ADDRESS*')
+                                                button.btn.btn-order_now order-now
+
                     // / contact
 
                     include jades/footer.jade

@@ -159,13 +159,7 @@ table {
   height: 70px;
   border-radius: 50%;
 }
-.contact-icon {
-  color: #fff;
-  position: absolute;
-  left: 34px;
-  font-size: 32px;
-  margin-top: 18px;
-}
+
 .bg-1 {
   background-color: #fecc17;
   width: 70px;
@@ -199,7 +193,7 @@ table {
   margin: 8px 0 9px !important;
   padding-bottom: 10px;
 }
-.contact-form .form-control {
+.form-control {
   color: #000 !important;
   font-size: 16px;
   font-weight: normal;
@@ -226,27 +220,6 @@ table {
   -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: 0;
-}
-.contact-form {
-  margin: 8px 0 9px !important;
-  padding-bottom: 10px;
-}
-.contact-form textarea.form-control {
-  color: #000 !important;
-  height: auto;
-}
-.contacts-btn {
-  background-color:  #FFB03B !important;
-  color: #ffffff !important;
-  width: 170px;
-  height: 54px;
-  border-radius: 3px;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  text-transform: capitalize;
-  border: 0px;
-  color: #000 !important;
 }
 
 .validation {
@@ -467,9 +440,6 @@ table {
     border:0px;
     border-bottom: 2px solid #A87F41;
   }
-  .contacts-btn-pad{
-    text-align: center;
-  }
 }
 @media (min-width: 20px) and (max-width: 450px) {
   .menu-restaurant {
@@ -496,9 +466,6 @@ table {
   }
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-  .contacts-btn-pad{
-    text-align: center;
-  }
 }
 
 @media (min-width: 767px) {

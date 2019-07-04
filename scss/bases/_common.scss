@@ -1,0 +1,9 @@
+.btn{
+  &:focus{
+    outline: unset;
+  }
+  &:hover{
+    background-color: #ff9c00!important;
+    color: #ffffff;
+  }
+}
