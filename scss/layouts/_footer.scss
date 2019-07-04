@@ -38,6 +38,21 @@ footer{
       font-family: lato;
       text-transform: uppercase;
     }
+    @media (max-width: 767px) {
+      .form-group{
+        position: relative;
+        .enter-mail{
+          width: 100%;
+        }
+        .btn-subscribe{
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform: translateX(0);
+        }
+      }
+
+    }
   }
   .footer-two{
     background: url("../../images/8.png");
@@ -163,6 +178,12 @@ footer{
             padding-right: 5px;
           }
         }
+      }
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+      .footer-top-item{
+        margin-bottom: 30px;
       }
     }
   }
