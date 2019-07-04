@@ -170,10 +170,15 @@ jQuery(document).ready(function($) {
 });
 
 $(document).ready(function() {
+  // water effect
   $('.demo').ripples({
+    resolution:512,
     dropRadius: 10,
     perturbance: 0.01,
   })
+  //auto rain
+
+
   // Define a blank array for the effect positions. This will be populated based on width of the title.
   var bArray = [];
   // Define a size array, this will be used to vary bubble sizes
