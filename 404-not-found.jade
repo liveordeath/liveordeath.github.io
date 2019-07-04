@@ -7,8 +7,55 @@ html(lang="vi")
         link(rel="stylesheet" href="css/index.css")
         script(type='text/javascript' src="js/libs/jquery.min.js")
     body#wrapper(oncontextmenu="return false", onload="myFunction()")
-        include jades/components/loading
-
+        .page-404
+            .top-menu
+                .container-fluid
+                    .row
+                        .col-sm-8.col-xs-2
+                            .social
+                                a.social-toggle(href='#')
+                                    i.fa.fa-share-alt
+                                ul
+                                    li
+                                        a(target='_blank', href='https://twitter.com/TienTra82584460')
+                                            i.fa.fa-tumblr-square
+                                            | Twitter
+                                    li
+                                        a(target='_blank', href='https://www.facebook.com/jokeritme')
+                                            i.fa.fa-facebook-square
+                                            | Facebook
+                                    li
+                                        a(target='_blank', href='https://www.instagram.com/flytemplates/')
+                                            i.fa.fa-instagram
+                                            | Instagram
+                                    li
+                                        a(target='_blank', href='https://www.pinterest.com/flytemplates/')
+                                            i.fa.fa-pinterest-square
+                                            | Pinterest
+                        .col-sm-4.col-xs-10.text-right
+                            ul
+                                li
+                                    a(href='https://demo.flytemplates.com/flyfood/feed/')
+                                        i.fa.fa-rss
+                                        | RSS
+                                li
+                                    a.form-search-open(href='#')
+                                        i.fa.fa-search
+                                        | Search
+                                    // Search Form
+                                    form.form-search-header(action='https://demo.flytemplates.com/flyfood/', method='get')
+                                        .inner
+                                            .row
+                                                .col-xs-8
+                                                    input.form-control(type='search', name='s', placeholder='Type Keywords')
+                                                .col-xs-4
+                                                    input.btn.btn-wide(type='submit', value='search')
+                                    // / Search Form
+            .logo
+                a.logo__url(href='index.html', title='Milk Tk')
+                    img(src='images/logo-page.png', alt='Milk Tk', width='144')
+        .not-found
+            img(src="images/404-not-found.png")
         include jades/footer.jade
         script(type='text/javascript' src="js/libs/jquery.min.js")
         script(type='text/javascript' src="js/libs/jquery.easing.min.js")

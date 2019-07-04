@@ -1,0 +1,169 @@
+footer{
+  .footer-one{
+    text-align: center;
+    padding: 100px 0;
+    background-color: #222;
+    .title{
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      padding-bottom: 30px;
+    }
+    .enter-mail{
+      border: none;
+      border-radius: 50px;
+      background-color: #000;
+      height: 40px;
+      font-size: 12px;
+      font-style: italic;
+      padding-left: 30px;
+      color: #d7d7d7;
+      width: 40%;
+      &:focus{
+
+      }
+    }
+    .btn-subscribe{
+      border: none;
+      border-radius: 50px;
+      padding: 10px 40px;
+      font-size: 12px;
+      background-color: #ffffff;
+      font-weight: 700;
+      height: 40px;
+      position: relative;
+      z-index: 2;
+      transform: translateX(-40px);
+      transition: .5s;
+      font-family: lato;
+      text-transform: uppercase;
+    }
+  }
+  .footer-two{
+    background: url("../../images/8.png");
+    background-size: cover;
+    .bg-black{
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.68);
+      .footer-top{
+        width: 100%;
+        padding: 100px 0px;
+        .footer-top-item{
+          width: 100%;
+          .title{
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          .logo-bottom{
+            margin-bottom: 20px;
+            display: block;
+            img{
+              width: 120px;
+            }
+          }
+          .font-14{
+            font-size: 14px;
+            color: rgb(204, 204, 204);
+          }
+          .btn-locate{
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgb(34, 34, 34);
+            font-weight: 700;
+            font-family: lato;
+            text-transform: uppercase;
+            border-radius: 50px;
+            background: #ffffff;
+            border-color: #ffffff;
+            transition: all 0.4s ease 0s;
+            padding: 15px 40px;
+          }
+          .address{
+            margin-top: 20px;
+            color: rgb(204, 204, 204);
+            font-size: 14px;
+            font-weight: 600;
+          }
+          .phone{
+            color: rgb(204, 204, 204);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            a{
+              margin-left: 15px;
+              color: rgb(204, 204, 204);
+              font-size: 14px;
+              font-weight: 600;
+              text-decoration: none;
+            }
+            .block{
+              margin-left: 90px;
+              display: block;
+            }
+          }
+          .footer-item-icon{
+            margin-top: 25px;
+            i{
+              color: #ffffff;
+              font-size: 18px;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center;
+              margin-left: 0px;
+              margin-right: 20px;
+              border-width: 1px;
+              border-style: solid;
+              border-color: rgb(204, 204, 204);
+              border-image: initial;
+              border-radius: 50%;
+              transition: all 0.4s ease 0s;
+            }
+          }
+          ul{
+            margin-top: 10px;
+            li{
+              a{
+                display: block;
+                color: rgb(204, 204, 204);
+                font-size: 13px;
+                font-family: lato;
+                font-weight: 600;
+                letter-spacing: 0.7px;
+                padding-bottom: 10px;
+                text-decoration: none;
+                transition: all 0.5s ease 0s;
+              }
+            }
+          }
+        }
+      }
+      .footer-bottom{
+        border-top: 2px solid #ccc;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+          color: #ccc;
+          font-size: 14px;
+        }
+        .term{
+          display: flex;
+          a{
+            color: #ccc;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: lato;
+            display: block;
+            margin-right: 5px;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
