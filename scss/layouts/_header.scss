@@ -154,9 +154,12 @@
   z-index: 1;
 }
 
-.top-menu{
+
+.banner-menu{
   position: absolute;
   width: 100%;
+}
+.top-menu{
   background-color: transparent;
   padding: 14px 0 16px;
   .social{
@@ -321,5 +324,15 @@
     .inner{
       transform: translateX(0);
     }
+  }
+}
+
+.logo{
+  font-size: 0;
+  text-align: center;
+  padding: 40px 15px;
+  &__url{
+    display: inline-block;
+    font-size: 22px;
   }
 }
