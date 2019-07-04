@@ -18,6 +18,10 @@
         font-weight: 600;
         margin-bottom: 20px;
       }
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -34,6 +38,9 @@
     border: 2px solid #fff;
     text-align: center;
     padding: 20px 0;
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
     p{
       font-family: lato;
       font-size: 15px;
@@ -80,6 +87,9 @@
     top: 0;
     z-index: 3;
     clip-path: polygon(50% 0,100% 0,100% 9%,50% 22%,0 9%,0 0);
+    @media (max-width: 767px) {
+      clip-path: polygon(50% 0,100% 0,100% 5%,50% 13%,0 5%,0 0);
+    }
   }
   .bg-black1{
     width: 100%;
@@ -119,6 +129,20 @@
       font-weight: 700;
       border: 1px solid transparent;
       color: #ffffff;
+    }
+    @media (max-width: 767px) {
+      top:12%;
+      input{
+        width: 90%;
+        height: 40px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    height: 490px;
+    h2{
+      top: 4%;
+      font-size: 15px;
     }
   }
 }
