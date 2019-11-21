@@ -1,9 +1,21 @@
-.btn{
-  &:focus{
-    outline: unset;
+body{
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+.center{
+  width: 100%;
+  height: 100%;
+  .contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
-  &:hover{
-    background-color: #ff9c00!important;
-    color: #ffffff;
-  }
+}
+h1,#demo{
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  text-align: center;
+  color: white;
 }
