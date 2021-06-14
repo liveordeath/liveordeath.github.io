@@ -4,18 +4,245 @@ html(lang="vi")
         include jades/head.jade
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         link(href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap&subset=latin-ext,vietnamese', rel='stylesheet')
-        link(href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap",rel="stylesheet")
         link(rel="stylesheet" href="css/index.css")
         script(type='text/javascript' src="js/libs/jquery.min.js")
-    body
-
-        .container
-            .center
-                .contents
-                    h1  404 nót phao :) come back to
-                    p#demo
+    body#wrapper(oncontextmenu="return false", onload="myFunction()")
         audio(src='mp3/test.mp3', autoplay='', loop='')
+        include jades/components/loading
+        #style-6.scrollbar
+            .force-overflow
+
+                #page-wrapper
+                    include jades/header
+                    // about
+                    section#about.section-padding
+                        .container
+                            .row
+                                .col-md-12.text-center.marb-35
+                                    h1.header-h Tiến Trần
+                                    p.header-p
+                                        | Chắc gì đã sống đến mai - mà để củ khoai đến sáng => Ăn đã :)
+                                .col-md-1
+                                .col-md-10
+                                    .col-md-6.col-sm-6
+                                        .about-info
+                                            h2.heading Bữa sáng đủ chất gồm những gì?
+                                            p
+                                                | Bữa ăn sáng hay còn gọi là bữa sáng, bữa lót dạ hay bữa điểm tâm là bữa ăn đầu tiên trong ngày, thường là vào buổi sáng sau khi thức dậy với thực đơn thường gồm những món thức ăn nhanh, nhẹ kèm theo các món tráng miệng và giải khát như trà, sữa, cà phê, nước giải khát. Mỗi một quốc gia, dân tộc, vùng miền, dân tộc, mỗi nền văn hóa trên thế giới đều có những bữa điểm tâm đa dạng theo cách khác nhau.
+                                            .details-list
+                                                ul
+                                                    li
+                                                        i.fa.fa-check
+                                                        | Cần tránh những đồ ăn ngọt
+                                                    li
+                                                        i.fa.fa-check
+                                                        | Cần tránh những thức ăn rán vì những thức ăn này chứa rất nhiều đường syro
+                                                    li
+                                                        i.fa.fa-check
+                                                        | Không nên dùng nước uống có gas và nước trái cây đóng hộp
+                                                    li
+                                                        i.fa.fa-check
+                                                        | Không nên ăn sáng nhiều tại các cửa hàng ăn nhanh
+                                                    li
+                                                        i.fa.fa-check
+                                                        | Nên tránh dùng trà và cà phê vì đây không phải là các đồ uống cung cấp nhiều năng lượng cho cơ thể.
+                                    .col-md-6.col-sm-6
+                                        img.img-responsive(src='images/res01.jpg', alt='')
+                                .col-md-1
+                    // /about
+                    // event
+                    section#event
+                        .bg-color
+                            .container
+                                .row
+                                    .col-xs-12.text-center(style='padding:60px;')
+                                        h1.header-h Món mới sắp ra mắt
+                                        p.header-p Thơm ngon 100%
+                                    .col-md-12(style='padding-bottom:60px;')
+                                        .item.active.left
+                                            .col-md-6.col-sm-6.left-images
+                                                img.img-responsive(src='images/res02.jpg')
+                                            .col-md-6.col-sm-6.details-text
+                                                .content-holder
+                                                    h2 Canh chua (milk tk)
+                                                    p
+                                                        | Bạn đang thắc mắc vì sao lại có món này trong đây? Đơn giản vì người tôi yêu thích ăn món này :)
+                                                    address
+                                                        strong Địa điểm:
+                                                        |                               đối diện 40 Nguyễn Huy Tưởng
+                                                        br
+                                                        strong Thời gian:
+                                                        |                               07:30pm
+                                                    a.btn.btn-imfo.btn-read-more(href='foodDetail.html') Tìm hiểu thêm
+                    // / event
+                    // menu
+                    section#menu-list.section-padding
+                        .container
+                            .row
+                                .col-md-12.text-center.marb-35
+                                    h1.header-h Menu List
+                                    p.header-p
+                                        | Dưới đây là tổng hợp một số các món đặc biệt của cửa hàng
+                                        br
+                                        | cá ở ao, rau ở vườn, gà chạy đồi, chim tự nhiên
+                                #menu-flters.col-md-12.text-center
+                                    ul
+                                        li
+                                            a.filter.active(data-filter='.menu-restaurant') Tất cả
+                                        li
+                                            a.filter(data-filter='.breakfast') Bữa sáng
+                                        li
+                                            a.filter(data-filter='.lunch') Bữa trưa
+                                        li
+                                            a.filter(data-filter='.dinner') Bữa tối
+                                #menu-wrapper
+                                    .breakfast.menu-restaurant
+                                        .menuImg
+                                            img(src="https://kenhphunu.com/media/tintuc/1440781200/nau-com-ngon-1.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Gạo hấp cách thủy
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $0.99
+                                            span.menu-subtitle Làm nhanh
+                                    .breakfast.menu-restaurant
+                                        .menuImg
+                                            img(src="https://image.vtcns.com/files/phuongly/2017/08/30/stock_390095539_-3-1346563.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Mỳ tôm hấp
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Làm nhanh
+                                    .breakfast.menu-restaurant
+                                        .menuImg
+                                            img(src="https://i1.wp.com/congthucmonngon.com/wp-content/uploads/2018/04/cach-lam-mon-trung-kho-gian-di-ma-ngon.jpg?ssl=1")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Trứng kho
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Làm nhanh
+                                    .breakfast.menu-restaurant
+                                        .menuImg
+                                            img(src="https://anh.eva.vn/upload/2-2017/images/2017-05-02/mi-nau-tom-hum-baby-ngon-kho-cuong-chieu-dai-ca-nha-cach-nau-my-voi-tom-hum-10-1493735615-width500height375.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Mỳ tôm quán net
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Làm nhanh
+                                    .lunch.menu-restaurant
+                                        .menuImg
+                                            img(src="data:image/jpeg;base64,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")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Thịt chó kho
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Đợi lâu
+                                    .lunch.menu-restaurant
+                                        .menuImg
+                                            img(src="https://media.cooky.vn/recipe/g5/44358/s800x500/cooky-recipe-636804127845026003.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Trứng xào lá ngón
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Làm nhanh
+                                    .lunch.menu-restaurant
+                                        .menuImg
+                                            img(src="http://sohanews.sohacdn.com/k:2015/1-nguoi-khong-nen-an-trung-ga-ngai-cuu-phunutoday-vn-1449650960374/nhung-nguoi-cam-an-trung-ga-ngai-cuu-du-me-den-may.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Trứng tráng người yêu cũ
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Làm nhanh
+                                    .lunch.menu-restaurant
+                                        .menuImg
+                                            img(src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bbq-pizza-318-1547837614.jpg?crop=0.949xw:0.801xh;0,0.138xh&resize=480:*")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Pizza
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Đợi lâu
+                                    .lunch.menu-restaurant
+                                        .menuImg
+                                            img(src="http://imgs.vietnamnet.vn/Images/2015/09/14/14/20150914141817-a2.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Châu chấu luộc
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Đợi lâu
+                                    .dinner.menu-restaurant
+                                        .menuImg
+                                            img(src="http://nhahangvuonque.com.vn/multidata/vit-xiem-hap-2.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Vịt hấp thoát ế
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Đợi lâu
+                                    .dinner.menu-restaurant
+                                        .menuImg
+                                            img(src="http://web.media.danviet.vn/2017/10/images/11f69dff-cach-lam-ga-khong-loi-thoatjpg.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Gà muôn lối thoát
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Đợi lâu
+                                    .dinner.menu-restaurant
+                                        .menuImg
+                                            img(src="http://anh.eva.vn/upload/3-2013/images/2013-07-31/1375235635-image012.jpg")
+                                        .menuText
+                                            span.clearfix
+                                                a.menu-title(href='#', data-meal-img='assets/images/restaurant/rib.jpg') Khổ qua xào lòng
+                                                span.menu-line(style='left: 166px; right: 44px;')
+                                                span.menu-price $20.99
+                                            span.menu-subtitle Làm nhanh
+                    // / menu
+                    // list food
+                    include jades/components/listFoods
+                    // / lisst food
+                    // contact
+                    section.order.demo
+                        .order__content
+                            .container
+                                .row
+                                    .col-sm-6.col-xs-12
+                                        .order__content__text
+                                            h1.header-h Make Your Order
+                                            h6  BOOK ONLINE
+                                            img(src='images/knife.png')
+                                            p
+                                                | The one day when the lady met this fellow and they knew it was much more than a hunch the first mate and his Skipper too will do their comfortable knew it was much more than a hunch the first mate.
+                                            .hotline
+                                                p hotline
+                                                a(href='index.html')
+                                                    i.fa.fa-phone
+                                                    | (04) 36.666.888
+                                            p.bold  * FREE DELIVERY WITHIN 10KM DISTANCE
+                                    .col-sm-6.col-xs-12
+                                        .order-form
+                                            h2  FILL THE ORDER
+                                            .bg-yellow
+                                            .bg-black1
+                                            .form-order
+                                                input.your-name(type='text', placeholder='YOUR NAME*')
+                                                input.your-mail(type='text', placeholder='YOUR MAIL*')
+                                                input.your-phone(type='text', placeholder='YOUR PHONE NUMBER*')
+                                                input.your-adddress(type='text', placeholder='YOUR ADDRESS*')
+                                                button.btn.btn-order_now order-now
+
+                    // / contact
+
+                    include jades/footer.jade
         script(type='text/javascript' src="js/libs/jquery.min.js")
+        //script(type='text/javascript' src="js/libs/jquery.easing.min.js")
         script(type='text/javascript' src="js/libs/bootstrap.min.js")
         script(type="text/javascript" src="js/libs/jquery.ripples-min.js")
         script(type="text/javascript" src="js/libs/custom.js")
